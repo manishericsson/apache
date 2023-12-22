@@ -1,0 +1,6 @@
+---
+- name: This playbook is for apache configure web page.
+  template:
+    src: /etc/ansible/roles/apache/templates/index.j2
+    dest: /var/www/html/index.html
+...

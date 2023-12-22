@@ -1,0 +1,7 @@
+---
+- name: This playbook is for start and enable httpd service.
+  service:
+    name: httpd
+    state: started
+    enabled: true
+...

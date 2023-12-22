@@ -1,0 +1,11 @@
+---
+- name: Allow firewall traffic and reload its service.
+  firewalld:
+    service: http
+    permanent: yes
+    state: enabled
+- name: Reload the service
+  service:
+    name: firewalld
+    state: reloaded
+...
